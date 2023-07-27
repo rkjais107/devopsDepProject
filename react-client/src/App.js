@@ -115,7 +115,7 @@ export default function App() {
       <ToastContainer position="bottom-right" />
       <main>
         <h1 className="text-xl md:text-5xl text-center font-bold py-10 border-b">
-          PDF Reader - Extract text from pdf pro reader
+          PDF Reader - Extract text from pdf
         </h1>
         <div className="flex flex-col items-center my-5">
           <label
