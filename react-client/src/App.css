@@ -1,0 +1,122 @@
+/* styles.css */
+
+/* ToastContainer */
+.ToastContainer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* Main content container */
+main {
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  font-size: 1.5rem; /* text-xl */
+  @media (min-width: 768px) {
+    font-size: 3rem; /* md:text-5xl */
+  }
+  font-weight: bold;
+  padding-top: 2.5rem; /* py-10 */
+  padding-bottom: 0.5rem; /* py-10 */
+  border-bottom: 1px solid #000; /* border-b */
+}
+
+/* Flex container for file input */
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.25rem; /* my-5 */
+}
+
+/* Select File button */
+label {
+  margin-bottom: 1rem; /* mb-4 */
+  cursor: pointer;
+  background-color: #3490dc; /* bg-blue-500 */
+  &:hover {
+    background-color: #2779bd; /* hover:bg-blue-600 */
+  }
+  color: #fff; /* text-white */
+  font-weight: bold;
+  padding: 0.5rem 1rem; /* py-2 px-4 */
+  border-radius: 0.25rem; /* rounded */
+}
+
+/* File input */
+input[type="file"] {
+  display: none; /* hidden */
+}
+
+/* Message for allowed file types */
+p {
+  margin-top: 0.625rem; /* my-5 */
+}
+
+/* Selected file information */
+.flex span {
+  font-weight: bold;
+}
+
+/* Progress bar for file upload */
+.progress {
+  width: 100%;
+}
+
+/* Percentage uploaded */
+.progress + span {
+  font-size: 0.75rem; /* text-sm */
+}
+
+/* Buttons container */
+.flex.gap-3 {
+  display: flex;
+  gap: 0.75rem; /* gap-3 */
+}
+
+/* Upload File button */
+button:nth-child(1) {
+  margin-top: 1rem; /* mt-4 */
+  background-color: #38a169; /* bg-green-500 */
+  padding: 0.5rem 1rem; /* py-2 px-4 */
+  border-radius: 0.25rem; /* rounded */
+  cursor: pointer;
+  color: #fff; /* text-white */
+  &:hover {
+    background-color: #276749; /* hover:bg-green-600 */
+  }
+}
+
+/* Delete File button */
+button:nth-child(2) {
+  margin-top: 1rem; /* mt-4 */
+  background-color: #e53e3e; /* bg-red-500 */
+  padding: 0.5rem 1rem; /* py-2 px-4 */
+  border-radius: 0.25rem; /* rounded */
+  cursor: pointer;
+  color: #fff; /* text-white */
+  &:hover {
+    background-color: #991b1b; /* hover:bg-red-600 */
+  }
+}
+
+/* Read PDF button */
+button:nth-child(3) {
+  margin-top: 1rem; /* mt-4 */
+  background-color: #f6e05e; /* bg-yellow-500 */
+  padding: 0.5rem 1rem; /* py-2 px-4 */
+  border-radius: 0.25rem; /* rounded */
+  cursor: pointer;
+  color: #fff; /* text-white */
+  &:hover {
+    background-color: #c69e41; /* hover:bg-yellow-600 */
+  }
+}
+
+/* Container for read PDF data */
+.container {
+  margin: 1.25rem auto; /* container mx-auto my-5 */
+}
